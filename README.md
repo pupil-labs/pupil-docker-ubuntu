@@ -1,5 +1,5 @@
 # pupil-docker-ubuntu
-Pupil development dependencies Ubuntu Docker image
+Pupil development dependencies Ubuntu 18.04 LTS Docker image. 
 
 ## Setup
 
@@ -21,5 +21,5 @@ Build the docker image. This will use the `Dockerfile` by default.
 
 ```bash
 cd pupil-docker-ubuntu
-docker build .
+docker build . --file 'Dockerfile' --tag 'pupil-py36:1.0'
 ```
