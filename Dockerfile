@@ -7,7 +7,6 @@ ADD . /root
 
 RUN chmod -R +x scripts && sync &&\
 	./scripts/apt_install.sh &&\
-	./scripts/opencv_install.sh &&\
 	./scripts/turbojpeg_install.sh &&\
 	./scripts/libuvc_install.sh &&\
 	./scripts/ceres_install.sh &&\
