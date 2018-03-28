@@ -1,6 +1,10 @@
 FROM ubuntu:18.04
 MAINTAINER Pupil Labs <info@pupil-labs.com>
 
+## for apt to be noninteractive
+ENV DEBIAN_FRONTEND noninteractive
+ENV DEBCONF_NONINTERACTIVE_SEEN true
+
 WORKDIR /root
 
 ADD . /root
