@@ -6,4 +6,4 @@ cd libjpeg-turbo-1.5.1
 ./configure --enable-static=no --prefix=/usr/local
 make install
 ldconfig  
-cd /root && rm -rf libjpeg-turbo-1.5.1
+cd /root && rm -rf libjpeg-turbo-1.5.1 && rm -rf libjpeg-turbo.tar.gz
