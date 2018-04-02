@@ -6,4 +6,5 @@ mkdir build
 cd build
 cmake ..
 make && make install
+ldconfig
 cd /root && rm -rf libuvc
