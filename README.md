@@ -37,3 +37,15 @@ Push the built image to dockerhub.
 ```bash
 docker push
 ```
+
+## Debugging
+
+You can run/enter the container like so. 
+
+```bash
+docker run -d --name pupil-ubuntu <name or id of image> tail -f /dev/null   
+```
+
+```bash
+docker exec -it <container name> bash
+```
