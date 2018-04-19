@@ -3,10 +3,10 @@ sudo: required
 services:
   - docker
 
-language: python
-
-#script:
-#  - python -m pytest -v
+before_install:
+  - docker build -t dodik78/pupil-ubuntu1604 .
+  - docker run -d dodik78/pupil-ubuntu1604
+  - docker ps -a
 
 after_success:
   - sh .travis/deploy_dockerhub.sh

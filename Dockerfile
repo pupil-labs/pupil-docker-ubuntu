@@ -5,9 +5,18 @@ MAINTAINER Pupil Labs <info@pupil-labs.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
 
-#WORKDIR /root
+WORKDIR /root
 
-#ADD . /root
+ADD . /root
+
+RUN  apt-get update
+RUN  apt-get install software-properties-common python-software-properties -y
+RUN  add-apt-repository ppa:deadsnakes/ppa
+RUN  apt-get update 
+RUN  apt-get install python3.6 -y
+
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+
 
 
 #RUN chmod -R +x scripts && sync &&\
