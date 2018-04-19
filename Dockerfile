@@ -13,17 +13,17 @@ RUN  apt-get update
 RUN  apt-get install software-properties-common python-software-properties -y
 RUN  add-apt-repository ppa:deadsnakes/ppa
 RUN  apt-get update 
-RUN  apt-get install python3.6 -y
+RUN  apt-get install python3.6 python3.6-dev libpython3.6-dev -y
 
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
 
 
 
-#RUN chmod -R +x scripts && sync &&\
-#	./scripts/apt_install.sh &&\
-#	./scripts/turbojpeg_install.sh &&\
-#	./scripts/libuvc_install.sh &&\
-#	./scripts/pip_install.sh
+RUN chmod -R +x scripts && sync &&\
+	./scripts/apt_install.sh &&\
+	./scripts/turbojpeg_install.sh &&\
+	./scripts/libuvc_install.sh &&\
+	./scripts/pip_install.sh
 
 # TODO copy libusb binary to /lib/x86_64-linux-gnu/libusb-1.0.so.0
 
