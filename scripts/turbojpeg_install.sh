@@ -1,8 +1,5 @@
 #!/bin/bash -e
 
-apt-get -yq update
-apt-get install -y autoconf automake libtool nasm
-
 JPEG_TURBO_VERSION=1.5.1 && \
 wget -q -O - https://github.com/libjpeg-turbo/libjpeg-turbo/archive/${JPEG_TURBO_VERSION}.tar.gz | tar -xzf - && \
 cd libjpeg-turbo-${JPEG_TURBO_VERSION} && \

@@ -9,16 +9,17 @@ WORKDIR /root
 
 ADD . /root
 
-
+# file scripts/python36_install should be runned first!!
 RUN chmod -R +x scripts && sync 	&&\
-	./scripts/apt_install.sh 	&&\
-	./scripts/python36_install.sh 	&&\
+	./scripts/pre_install.sh		&&\
+	./scripts/apt_install.sh 		&&\
+	./scripts/python36_install.sh 	&&\  
 #	./scripts/opencv_install.sh 	&&\ ## made via pip3
 	./scripts/ffmpeg_install.sh 	&&\
 	./scripts/turbojpeg_install.sh 	&&\
-	./scripts/libuvc_install.sh 	&&\
-	./scripts/pip_install.sh	&&\
-	./scripts/ceres_install.sh	&&\
+	./scripts/libuvc_install.sh    	&&\
+	./scripts/pip_install.sh		&&\
+#	./scripts/ceres_install.sh		&&\
 	./scripts/post_install.sh
 
 
