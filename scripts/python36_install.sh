@@ -8,4 +8,9 @@ apt-get install -yq python3.6 python3.6-dev libpython3.6-dev
 
 
 
+# strictly after all
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+
+
+
 
