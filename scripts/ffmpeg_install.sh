@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 add-apt-repository -y ppa:jonathonf/ffmpeg-3
 apt-get update

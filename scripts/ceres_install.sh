@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash -e
+
 cd /root
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver

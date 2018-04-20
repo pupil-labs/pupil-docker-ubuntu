@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash -e
+
 apt-get -yq update
 apt-get install -y autoconf automake libtool nasm
 

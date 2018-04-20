@@ -1,4 +1,7 @@
-#!/bin/sh -e
+#!/bin/bash -e
+# -e  Exit immediately if a command exits with a non-zero status
+# -x  Print commands and their arguments as they are executed
+
 echo -e "\n##########\nUpdating apt-get\n##########\n"
 apt-get -yq update
 

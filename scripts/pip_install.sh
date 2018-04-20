@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash -e
+
 python3 -m pip install --upgrade pip
 pip3 install cython
 pip3 install setuptools
