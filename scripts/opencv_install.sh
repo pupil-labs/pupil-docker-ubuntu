@@ -3,8 +3,12 @@
 cd /root
 git clone https://github.com/opencv/opencv
 cd opencv && mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=RELEASE -DWITH_TBB=ON -DWITH_CUDA=OFF -DBUILD_opencv_python2=OFF -DBUILD_opencv_python3=ON ..
-make -j2
+cmake -DCMAKE_BUILD_TYPE=RELEASE  \
+      -DWITH_TBB=ON -DWITH_CUDA=OFF \
+      -DBUILD_opencv_python2=OFF \
+      -D CMAKE_INSTALL_PREFIX=/usr/local/opt/opencv/ \
+      -DBUILD_opencv_python3=ON ..
+make -j"$(nproc)"
 make install
 ldconfig
 cd /root && rm -rf opencv
