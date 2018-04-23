@@ -1,3 +1,6 @@
+pyinstaller>=3.3.1
+numpy 
+scipy
 numexpr>=2.6.2
 psutil>=5.2.2
 pyzmq>=16.0.2
@@ -9,4 +12,3 @@ pyaudio>=0.2.11
 -e git+https://github.com/pupil-labs/pyuvc#egg=uvc
 -e git+https://github.com/pupil-labs/pyndsi#egg=ndsi
 -e git+https://github.com/pupil-labs/pyglui#egg=pyglui
-pyinstaller>=3.3.1
