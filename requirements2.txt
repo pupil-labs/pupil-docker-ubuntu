@@ -1,5 +1,5 @@
--e git+https://github.com/zeromq/pyre#egg=pyre
--e git+https://github.com/pupil-labs/PyAV#egg=av
--e git+https://github.com/pupil-labs/pyuvc#egg=uvc
--e git+https://github.com/pupil-labs/pyndsi#egg=ndsi
--e git+https://github.com/pupil-labs/pyglui#egg=pyglui
+git+https://github.com/zeromq/pyre#egg=pyre
+git+https://github.com/pupil-labs/PyAV#egg=av
+git+https://github.com/pupil-labs/pyuvc#egg=uvc
+git+https://github.com/pupil-labs/pyndsi#egg=ndsi
+git+https://github.com/pupil-labs/pyglui#egg=pyglui

@@ -10,7 +10,10 @@ for i in `cat requirements.txt`; do
 done
 
 
-pip3 install  -r requirements2.txt
+for i in `cat requirements2.txt`; do
+    pip3 install -e "$i"
+done
+
 
 
 
