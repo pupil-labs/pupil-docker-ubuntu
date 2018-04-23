@@ -1,6 +1,8 @@
+cython
+setuptools
 pyinstaller>=3.3.1
-numpy 
-scipy
+numpy>=1.14.2
+scipy>=1.0.1
 numexpr>=2.6.2
 psutil>=5.2.2
 pyzmq>=16.0.2
