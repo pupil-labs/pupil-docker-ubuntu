@@ -10,12 +10,3 @@ for i in `cat requirements.txt`; do
 done
 
 
-for i in `cat requirements2.txt`; do
-    pip3 install -e "$i"
-done
-
-
-
-
-# cleanup pip install dir according to pip instructions in readme
-rm -rf /root/src
