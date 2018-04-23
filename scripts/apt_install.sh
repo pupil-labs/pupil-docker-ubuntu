@@ -12,5 +12,5 @@ libboost-dev libboost-python-dev libgoogle-glog-dev libatlas-base-dev libeigen3-
 libceres1 libceres-dev autoconf automake libtool
 
 #install fresh version of pip (pip3)
-wget -sS https://bootstrap.pypa.io/get-pip.py | sudo python3
+wget -sS https://bootstrap.pypa.io/get-pip.py | python3
 
