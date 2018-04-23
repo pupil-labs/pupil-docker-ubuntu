@@ -9,5 +9,6 @@ libusb-1.0-0-dev libglew-dev libglfw3-dev libtbb-dev \
 libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev \
 libavresample-dev ffmpeg libav-tools x264 x265 libportaudio2 portaudio19-dev \
 libboost-dev libboost-python-dev libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev libopencv-dev \
-libceres1 libceres-dev autoconf automake libtool
+libceres1 libceres-dev autoconf automake libtool python3-numpy python3-scipy
+
 
