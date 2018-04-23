@@ -4,8 +4,8 @@
 
 echo -e "\n##########\nInstalling all other apt packages\n##########\n"
 apt-get install -yq --no-install-recommends \
-pkg-config zip fakeroot git cmake build-essential nasm wget  python3-setuptools \
-libusb-1.0-0-dev python3-dev python3-pip libglew-dev libglfw3-dev libtbb-dev \
+pkg-config zip fakeroot git cmake build-essential nasm wget curl \
+libusb-1.0-0-dev libglew-dev libglfw3-dev libtbb-dev \
 libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev \
 libavresample-dev ffmpeg libav-tools x264 x265 libportaudio2 portaudio19-dev \
 libboost-dev libboost-python-dev libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev libopencv-dev \
