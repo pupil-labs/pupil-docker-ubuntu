@@ -14,11 +14,12 @@ RUN chmod -R +x scripts && sync 	&&\
 	./scripts/pre_install.sh	&&\
 	./scripts/apt_install.sh 	&&\
 	./scripts/python36_install.sh	&&\
+	./scripts/pip_install.sh	&&\
 	./scripts/opencv_install.sh	&&\
 	./scripts/ffmpeg_install.sh	&&\
 	./scripts/turbojpeg_install.sh	&&\
 	./scripts/libuvc_install.sh	&&\
-	./scripts/pip_install.sh	&&\
+	./scripts/pip_pupil_install.sh	&&\
 	./scripts/ceres_install.sh	&&\
 	./scripts/post_install.sh
 
