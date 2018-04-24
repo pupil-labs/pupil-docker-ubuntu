@@ -15,3 +15,9 @@ make -j"$(nproc)"
 make install
 ldconfig
 cd /root && rm -rf opencv
+
+#
+# make opencv available for python3.6
+#
+ln -s /usr/local/opt/opencv/lib/python3.6/dist-packages/cv2.cpython-36m-x86_64-linux-gnu.so /usr/local/lib/python3.6/dist-packages
+
