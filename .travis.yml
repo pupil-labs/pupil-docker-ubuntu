@@ -4,8 +4,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t dodik78/pupil-ubuntu1604 .
-  - docker run -d dodik78/pupil-ubuntu1604
+  - docker build -t pupillabs/pupil-ubuntu-1604 .
+  - docker run -d pupillabs/pupil-ubuntu-1604
   - docker ps -a
 
 after_success:
