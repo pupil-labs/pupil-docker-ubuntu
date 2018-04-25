@@ -18,7 +18,7 @@ Create a [docker group](https://stackoverflow.com/a/33596140):
 sudo usermod -aG docker $(whoami)
 ```
 
-## Build Docker Image
+## Manually Build Docker Image
 
 Build the docker image. This will use the `Dockerfile` by default.
 
@@ -27,7 +27,7 @@ cd pupil-docker-ubuntu
 docker build . --file 'Dockerfile' --tag 'pupillabs/pupil-docker-ubuntu:1.0'
 ```
 
-## Push Docker image to Docker Hub
+## Manually Push Docker image to Docker Hub
 
 If not logged in already, you will need to log in before pushing to docker. 
 
