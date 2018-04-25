@@ -5,6 +5,8 @@
 #  dont works as expected
 #  installing step by step
 
-for i in `cat requirements.txt`; do
+for i in `cat requirements_pupil.txt`; do
     pip3 install "$i"
 done
+
+

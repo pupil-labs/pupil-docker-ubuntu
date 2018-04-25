@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash -e
+
 cd /root
 git clone https://github.com/pupil-labs/libuvc
 cd libuvc

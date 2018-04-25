@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t pupillabs/pupil-ubuntu-1604 .
+  - docker run -d pupillabs/pupil-ubuntu-1604
+  - docker ps -a
+
+after_success:
+  - sh .travis/deploy_dockerhub.sh
