@@ -1,8 +1,7 @@
-numpy=1.11.0
-scipy=0.17.0-1
+scipy=0.19.0
 cython
 setuptools
-pyinstaller
+git+https://github.com/pyinstaller/pyinstaller.git
 numexpr>=2.6.2
 psutil>=5.2.2
 pyzmq>=16.0.2
