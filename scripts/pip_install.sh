@@ -6,7 +6,7 @@
 #  installing step by step
 
 for i in `cat requirements.txt`; do
-    pip3 install --upgrade "$i"
+    pip3 install "$i"
 done
 
 
