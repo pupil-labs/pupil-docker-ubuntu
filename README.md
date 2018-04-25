@@ -1,5 +1,8 @@
 # pupil-docker-ubuntu
-Pupil development dependencies Ubuntu 18.04 LTS Docker image. 
+Pupil development dependencies Ubuntu Docker image. 
+
+- `master` branch contains dependencies required to build an image based on `Ubuntu 16.04`
+- `ubuntu_18.04` branch contains dependencies required to build an image based on `Ubuntu 18.04`
 
 ## Setup
 
