@@ -21,6 +21,7 @@ RUN chmod -R +x scripts && sync 	&&\
 	./scripts/libuvc_install.sh	&&\
 	./scripts/pip_pupil_install.sh	&&\
 	./scripts/ceres_install.sh	&&\
+	./scripts/pyinstaller_install.sh &&\
 	./scripts/post_install.sh
 
 
